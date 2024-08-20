@@ -9,51 +9,176 @@
 </head>
 
 <body>
+    <!-- Header Section -->
     <header>
-        <h1>Staff Management</h1>
-        <nav>
-            <ul>
+            <h1>Staff Management</h1>
+            <nav>
+                <ul>
                 <li><a href="home.html">Home</a></li>
                 <li><a href="residents.html">Residents</a></li>
                 <li><a href="staff.html">Staff</a></li>
                 <li><a href="login.html">Login</a></li>
-            </ul>
-        </nav>
+                </ul>
+            </nav>
     </header>
-    <hr>
+	
+	<hr>
+<!-- Breadcrumb Navigation -->
+    <nav class="breadcrumb">
+        <a href="home.html">Home</a> &gt; <a href="staff.html">Staff</a>
+    </nav>
+
+    <!-- Main Content Section -->
     <main>
-        <h2>Staff</h2>
-        <table>
-            <tr>
-                <th>ID</th>
-                <th>Name</th>
-                <th>Role</th>
-                <th>Qualifications</th>
-                <th>Employment Type</th>
-                <th>Remuneration Details</th>
-            </tr>
-            <tr>
-                <td>1</td>
-                <td>Alice Johnson</td>
-                <td>Nurse</td>
-                <td>BSN</td>
-                <td>Full-time</td>
-                <td>$50,000/year</td>
-            </tr>
-            <tr>
-                <td>2</td>
-                <td>Bob Williams</td>
-                <td>Caregiver</td>
-                <td>Certified Caregiver</td>
-                <td>Part-time</td>
-                <td>$20/hour</td>
-            </tr>
-            <!-- Add more staff as needed -->
-        </table>
+        <!-- Inventory Summary Section -->
+        <section class="inventory-summary">
+            <div class="inventory-graph">
+              <!-- (Image of inventory graph, for example) section <img src="images/inventory.png" alt="Inventory graph?"> --> 
+                <p>Inventory graph</p>
+            </div>
+            <div class="inventory-text">
+                <h2>Inventory Summary for this month</h2>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque efficitur euismod quam, in blandit purus. Nullam mollis eros ut hendrerit suscipit. Morbi feugiat metus non nunc tempor, non tempor elit lacinia. Fusce ac odio arcu. Curabitur nec lacus neque. Nulla facilisi. Mauris a dapibus dolor. Donec id odio eu eros tincidunt faucibus non nec arcu.</p>
+                <a href="#">Go to the Inventory Page -></a>
+            </div>
+        </section>
+
+        <!-- Current Staff On-Site Section -->
+        <section class="current-staff">
+            <h2>Current Staff on-site:</h2>
+            <div class="staff-grid">
+                <!-- Repeat for each staff member, fill in details accordingly -->
+                <div class="staff-member">
+                    <img src="images/staff_placeholder.png" alt="Staff Member">
+                    <p>Staff Member Name</p>
+                </div>
+                <div class="staff-member">
+                    <img src="images/staff_placeholder.png" alt="Staff Member">
+                    <p>Staff Member Name</p>
+                </div>
+                <div class="staff-member">
+                    <img src="images/staff_placeholder.png" alt="Staff Member">
+                    <p>Staff Member Name</p>
+                </div>
+                <div class="staff-member">
+                    <img src="images/staff_placeholder.png" alt="Staff Member">
+                    <p>Staff Member Name</p>
+                </div>
+                <div class="staff-member">
+                    <img src="images/staff_placeholder.png" alt="Staff Member">
+                    <p>Staff Member Name</p>
+                </div>
+                <div class="staff-member">
+                    <img src="images/staff_placeholder.png" alt="Staff Member">
+                    <p>Staff Member Name</p>
+                </div>
+                <div class="staff-member">
+                    <img src="images/staff_placeholder.png" alt="Staff Member">
+                    <p>Staff Member Name</p>
+                </div>
+                <div class="staff-member">
+                    <img src="images/staff_placeholder.png" alt="Staff Member">
+                    <p>Staff Member Name</p>
+                </div>
+            </div>
+        </section>
+
+         <section class="view-all-staff-button">
+            <form method="POST" action="staff.html">
+                <button type="submit" name="view_all" class="btn">View All Staff</button>
+            </form>
+			
+        </section>
+        <!-- View All Staff Section -->
+         <section class="view-all-staff">
+         <!----- PHP
+            // Check if the "View All Staff" button was clicked
+            // if (isset($_POST['view_all'])):
+
+                // Connect to the database
+                // $conn = new mysqli('localhost', 'root', '', 'aged_care_management');
+
+                // Check if the connection was successful
+                // if ($conn->connect_error):
+                //     die("Connection failed: " . $conn->connect_error);
+                // endif;
+
+                // Write an SQL query to select staff details from the 'staff' table
+                // $sql = "SELECT staff_id, name, position, email, phone FROM staff";
+
+                // Execute the query and store the result
+                // $result = $conn->query($sql);
+
+                // Check if the query returned any results
+                // if ($result->num_rows > 0):
+
+                    // Start an HTML table
+                    // echo "<h2>All Staff Members</h2>";
+                    // echo "<table>
+                    //         <thead>
+                    //             <tr>
+                    //                 <th>Staff ID</th>
+                    //                 <th>Name</th>
+                    //                 <th>Position</th>
+                    //                 <th>Email</th>
+                    //                 <th>Phone</th>
+                    //             </tr>
+                    //         </thead>
+                    //         <tbody>";
+
+                    // Loop through the data and output table rows
+                    // while ($row = $result->fetch_assoc()):
+                    //     echo "<tr>
+                    //             <td>" . $row['staff_id'] . "</td>
+                    //             <td>" . $row['name'] . "</td>
+                    //             <td>" . $row['position'] . "</td>
+                    //             <td>" . $row['email'] . "</td>
+                    //             <td>" . $row['phone'] . "</td>
+                    //           </tr>";
+                    // endwhile;
+
+                    // Close the table body and the table itself
+                    // echo "</tbody></table>";
+                // else:
+
+                    // If no staff were found, display a message
+                    // echo "<p>No staff found.</p>";
+                // endif;
+
+                // Close the database connection
+                // $conn->close();
+            // endif;
+            PHP ------>
+        </section>
+
+        <!-- Facility Management Report Section -->
+        <section class="facility-summary">
+            <div class="facility report">
+              <!-- (Image of facility report stats, number of reviews and ratings, just an example) section <img src="images/facilityreport.png" alt="Facility Report"> --> 
+                <p>Facility Management Summary</p>
+            </div>
+            <div class="facility-text">
+                <h2>Facility Management Summary for this month</h2>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque efficitur euismod quam, in blandit purus. Nullam mollis eros ut hendrerit suscipit. Morbi feugiat metus non nunc tempor, non tempor elit lacinia. Fusce ac odio arcu. Curabitur nec lacus neque. Nulla facilisi. Mauris a dapibus dolor. Donec id odio eu eros tincidunt faucibus non nec arcu.</p>
+                <a href="#">Go to the Facilities Page-></a>
+            </div>
+        </section>
+
+        <section class="scheduling">
+            <h2>Staff Scheduling Roster</h2>
+            <p><a href="scheduling.php">View the latest staff scheduling roster here.</a></p>
+                    <!-- PHP code to fetch and display scheduling data -->
+        </section>
+
     </main>
+
+    </main>
+
+    <!-- Footer Section -->
     <footer>
         <p>&copy; 2024 Aged Care Management System. All rights reserved.</p>
     </footer>
 </body>
 
 </html>
+
