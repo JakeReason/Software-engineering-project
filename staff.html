@@ -11,35 +11,38 @@
 <body>
     <!-- Header Section -->
     <header>
-            <h1>Staff Management</h1>
-            <nav>
-                <ul>
+        <h1>Staff Management</h1>
+        <nav>
+            <ul>
                 <li><a href="home.html">Home</a></li>
                 <li><a href="residents.html">Residents</a></li>
                 <li><a href="staff.html">Staff</a></li>
                 <li><a href="login.html">Login</a></li>
-                </ul>
-            </nav>
+            </ul>
+        </nav>
     </header>
-	
-	<hr>
-<!-- Breadcrumb Navigation -->
+
+    <hr>
+    <!-- Breadcrumb Navigation -->
     <nav class="breadcrumb">
         <a href="home.html">Home</a> &gt; <a href="staff.html">Staff</a>
     </nav>
-
+    <hr>
     <!-- Main Content Section -->
-    <main>
+    <main class="staff-main">
         <!-- Inventory Summary Section -->
         <section class="inventory-summary">
-            <div class="inventory-graph">
-              <!-- (Image of inventory graph, for example) section <img src="images/inventory.png" alt="Inventory graph?"> --> 
-                <p>Inventory graph</p>
-            </div>
             <div class="inventory-text">
                 <h2>Inventory Summary for this month</h2>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque efficitur euismod quam, in blandit purus. Nullam mollis eros ut hendrerit suscipit. Morbi feugiat metus non nunc tempor, non tempor elit lacinia. Fusce ac odio arcu. Curabitur nec lacus neque. Nulla facilisi. Mauris a dapibus dolor. Donec id odio eu eros tincidunt faucibus non nec arcu.</p>
-                <a href="#">Go to the Inventory Page -></a>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque efficitur euismod quam, in
+                    blandit purus. Nullam mollis eros ut hendrerit suscipit. Morbi feugiat metus non nunc tempor, non
+                    tempor elit lacinia. Fusce ac odio arcu. Curabitur nec lacus neque. Nulla facilisi. Mauris a dapibus
+                    dolor. Donec id odio eu eros tincidunt faucibus non nec arcu.</p>
+                <a href="#">Go to the Inventory Page</a>
+            </div>
+            <div class="inventory-graph">
+                <!-- (Image of inventory graph, for example) section <img src="images/inventory.png" alt="Inventory graph?"> -->
+                <p>Inventory graph</p>
             </div>
         </section>
 
@@ -83,15 +86,15 @@
             </div>
         </section>
 
-         <section class="view-all-staff-button">
+        <section class="view-all-staff-button">
             <form method="POST" action="staff.html">
                 <button type="submit" name="view_all" class="btn">View All Staff</button>
             </form>
-			
+
         </section>
         <!-- View All Staff Section -->
-         <section class="view-all-staff">
-         <!----- PHP
+        <section class="view-all-staff">
+            <!----- PHP
             // Check if the "View All Staff" button was clicked
             // if (isset($_POST['view_all'])):
 
@@ -153,21 +156,24 @@
 
         <!-- Facility Management Report Section -->
         <section class="facility-summary">
-            <div class="facility report">
-              <!-- (Image of facility report stats, number of reviews and ratings, just an example) section <img src="images/facilityreport.png" alt="Facility Report"> --> 
-                <p>Facility Management Summary</p>
-            </div>
             <div class="facility-text">
                 <h2>Facility Management Summary for this month</h2>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque efficitur euismod quam, in blandit purus. Nullam mollis eros ut hendrerit suscipit. Morbi feugiat metus non nunc tempor, non tempor elit lacinia. Fusce ac odio arcu. Curabitur nec lacus neque. Nulla facilisi. Mauris a dapibus dolor. Donec id odio eu eros tincidunt faucibus non nec arcu.</p>
-                <a href="#">Go to the Facilities Page-></a>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque efficitur euismod quam, in
+                    blandit purus. Nullam mollis eros ut hendrerit suscipit. Morbi feugiat metus non nunc tempor, non
+                    tempor elit lacinia. Fusce ac odio arcu. Curabitur nec lacus neque. Nulla facilisi. Mauris a dapibus
+                    dolor. Donec id odio eu eros tincidunt faucibus non nec arcu.</p>
+                <a href="#">Go to the Facilities Page</a>
+            </div>
+            <div class="facility-report">
+                <!-- (Image of facility report stats, number of reviews and ratings, just an example) section <img src="images/facilityreport.png" alt="Facility Report"> -->
+                <p>Facility Management Summary</p>
             </div>
         </section>
 
         <section class="scheduling">
             <h2>Staff Scheduling Roster</h2>
-            <p><a href="scheduling.php">View the latest staff scheduling roster here.</a></p>
-                    <!-- PHP code to fetch and display scheduling data -->
+            <p><a href="scheduling.php">View the latest staff scheduling roster here</a></p>
+            <!-- PHP code to fetch and display scheduling data -->
         </section>
 
     </main>
@@ -181,4 +187,3 @@
 </body>
 
 </html>
-

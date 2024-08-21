@@ -22,121 +22,130 @@
         </nav>
     </header>
     <hr>
-
     <!-- Breadcrumb Navigation -->
     <nav class="breadcrumb">
         <a href="home.html">Home</a> &gt; <a href="residents.html">Residents</a>
     </nav>
+    <hr>
+    <main class="residents-main">
+        <!-- Dashboard Overview Section -->
+        <section class="dashboard-overview">
+            <div class="summary">
+                <h2>Resident Summary Dashboard</h2>
+                <p>Total Residents:
+                    <strong>
+                        <!-- PHP code to retrieve and display the total number of residents from the database -->
+                    </strong>
+                </p>
+                <p>Residents Requiring Special Care:
+                    <strong>
+                        <!-- PHP code to retrieve and display the number of residents requiring special care (High level) from the database -->
+                    </strong>
+                </p>
+                <p>Recent Updates: <strong>Last update 1 hour ago</strong></p>
+            </div>
+            <div class="quick-links">
+                <h3>Quick Links</h3>
+                <ul>
+                    <li><a href="add_resident.php">Add New Resident</a></li>
+                    <!-- Link to PHP file or a form to add a new resident -->
+                    <li><a href="scheduling.php">View Staff Schedules</a></li>
+                    <!-- Link to PHP file or html page to view staff schedules-->
+                    <li><a href="emergencycontacts.php">Emergency Contacts</a></li>
+                    <!-- Link to PHP file or html page to view emergency contacts, listed in order of resident ID-->
+                </ul>
+            </div>
+        </section>
+        <!-- Search and Filter Section -->
+        <section class="search-navigation">
+            <h2>Search and Filter Residents</h2>
+            <form method="POST" action="residents.php" class="search-form">
+                <label for="first_name">First Name:</label>
+                <input type="text" id="first_name" name="first_name" value="">
+                <!-- PHP code to echo the value of the first name if the form is submitted -->
+                <br>
+                <label for="last_name">Last Name:</label>
+                <input type="text" id="last_name" name="last_name" value="">
+                <!-- PHP code to echo the value of the last name if the form is submitted -->
+                <br>
+                <label for="dob">Date of Birth:</label>
+                <input type="date" id="dob" name="dob" value="">
+                <!-- PHP code to echo the value of the date of birth if the form is submitted -->
+                <br>
+                <label for="care_level">Care Level:</label>
+                <select id="care_level" name="care_level">
+                    <option value="">Select Care Level</option>
+                    <option value="low">Low</option>
+                    <!-- PHP code to mark this option as selected if $care_level is 'low' -->
+                    <option value="medium">Medium</option>
+                    <!-- PHP code to mark this option as selected if $care_level is 'medium' -->
+                    <option value="high">High</option>
+                    <!-- PHP code to mark this option as selected if $care_level is 'high' -->
+                </select>
+                <br>
+                <label for="room_number">Room Number:</label>
+                <input type="text" id="room_number" name="room_number" value="">
+                <!-- PHP code to echo the value of the room number if the form is submitted -->
+                <br>
+                <button type="submit">Search</button>
+            </form>
+        </section>
 
-    <!-- Dashboard Overview Section -->
-    <section class="dashboard-overview">
-        <div class="summary">
-            <h2>Resident Summary Dashboard</h2>
-            <p>Total Residents: 
-                <strong>
-                    <!-- PHP code to retrieve and display the total number of residents from the database -->
-                </strong>
-            </p>
-            <p>Residents Requiring Special Care: 
-                <strong>
-                    <!-- PHP code to retrieve and display the number of residents requiring special care (High level) from the database -->
-                </strong>
-            </p>
-            <p>Recent Updates: <strong>Last update 1 hour ago</strong></p>
-        </div>
-        <div class="quick-links">
-            <h3>Quick Links</h3>
-            <ul>
-                <li><a href="add_resident.php">Add New Resident</a></li> <!-- Link to PHP file or a form to add a new resident -->
-                <li><a href="scheduling.php">View Staff Schedules</a></li> <!-- Link to PHP file or html page to view staff schedules-->
-                <li><a href="emergencycontacts.php">Emergency Contacts</a></li> <!-- Link to PHP file or html page to view emergency contacts, listed in order of resident ID-->
-            </ul>
-        </div>
-    </section>
+        <!-- Residents Table Section -->
+        <section class="residents-table">
+            <h2>Residents List</h2>
+            <table>
+                <thead>
+                    <tr>
+                        <th>First Name</th>
+                        <th>Last Name</th>
+                        <th>Date of Birth</th>
+                        <th>Care Level</th>
+                        <th>Room Number</th>
+                        <th>Medical Condition</th>
+                        <th>Actions</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <!-- PHP code to retrieve and display the list of residents from the database based on search/filter criteria -->
+                    <!-- Example row, will be replaced by PHP generated rows -->
+                    <tr>
+                        <td><!-- PHP: Display first name --></td>
+                        <td><!-- PHP: Display last name --></td>
+                        <td><!-- PHP: Display date of birth --></td>
+                        <td><!-- PHP: Display care level --></td>
+                        <td><!-- PHP: Display room number --></td>
+                        <td><!-- PHP: Display medical condition --></td>
+                        <td><a href="resident_details.php?id=" class="btn">View Details</a>
+                            <!-- PHP code to include resident ID in the URL --></td>
+                    </tr>
+                    <!-- End of PHP loop for each resident -->
+                </tbody>
+            </table>
+        </section>
 
-    <!-- Search and Filter Section -->
-    <section class="search-navigation">
-        <h2>Search and Filter Residents</h2>
-        <form method="POST" action="residents.php" class="search-form">
-            <label for="first_name">First Name:</label>
-            <input type="text" id="first_name" name="first_name" value=""> 
-            <!-- PHP code to echo the value of the first name if the form is submitted -->
+        <!-- Integration with Other Modules -->
+        <section class="integration-tools">
+            <h2>Integrated Tools</h2>
+            <div class="tool-card">
+                <h3>Medication Tracker</h3>
+                <a href="medication_tracker.php" class="btn">Access Medication Tracker</a>
+                <!-- Link to the medication tracker PHP page -->
+            </div>
 
-            <label for="last_name">Last Name:</label>
-            <input type="text" id="last_name" name="last_name" value="">
-            <!-- PHP code to echo the value of the last name if the form is submitted -->
+            <div class="tool-card">
+                <h3>Family Interaction Portal</h3>
+                <a href="familyportal.php" class="btn">Access Family Portal</a>
+                <!-- Link to the family interaction portal PHP page -->
+            </div>
 
-            <label for="dob">Date of Birth:</label>
-            <input type="date" id="dob" name="dob" value="">
-            <!-- PHP code to echo the value of the date of birth if the form is submitted -->
-
-            <label for="care_level">Care Level:</label>
-            <select id="care_level" name="care_level">
-                <option value="">Select Care Level</option>
-                <option value="low">Low</option> <!-- PHP code to mark this option as selected if $care_level is 'low' -->
-                <option value="medium">Medium</option> <!-- PHP code to mark this option as selected if $care_level is 'medium' -->
-                <option value="high">High</option> <!-- PHP code to mark this option as selected if $care_level is 'high' -->
-            </select>
-
-            <label for="room_number">Room Number:</label>
-            <input type="text" id="room_number" name="room_number" value="">
-            <!-- PHP code to echo the value of the room number if the form is submitted -->
-
-            <button type="submit">Search</button>
-        </form>
-    </section>
-
-    <!-- Residents Table Section -->
-    <section class="residents-table">
-        <h2>Residents List</h2>
-        <table>
-            <thead>
-                <tr>
-                    <th>First Name</th>
-                    <th>Last Name</th>
-                    <th>Date of Birth</th>
-                    <th>Care Level</th>
-                    <th>Room Number</th>
-                    <th>Medical Condition</th>
-                    <th>Actions</th>
-                </tr>
-            </thead>
-            <tbody>
-                <!-- PHP code to retrieve and display the list of residents from the database based on search/filter criteria -->
-                <!-- Example row, will be replaced by PHP generated rows -->
-                <tr>
-                    <td><!-- PHP: Display first name --></td>
-                    <td><!-- PHP: Display last name --></td>
-                    <td><!-- PHP: Display date of birth --></td>
-                    <td><!-- PHP: Display care level --></td>
-                    <td><!-- PHP: Display room number --></td>
-                    <td><!-- PHP: Display medical condition --></td>
-                    <td><a href="resident_details.php?id=" class="btn">View Details</a> <!-- PHP code to include resident ID in the URL --></td>
-                </tr>
-                <!-- End of PHP loop for each resident -->
-            </tbody>
-        </table>
-    </section>
-
-    <!-- Integration with Other Modules -->
-    <section class="integration-tools">
-        <h2>Integrated Tools</h2>
-        <div class="tool-card">
-            <h3>Medication Tracker</h3>
-            <a href="medication_tracker.php" class="btn">Access Medication Tracker</a> <!-- Link to the medication tracker PHP page -->
-        </div>
-
-        <div class="tool-card">
-            <h3>Family Interaction Portal</h3>
-            <a href="familyportal.php" class="btn">Access Family Portal</a> <!-- Link to the family interaction portal PHP page -->
-        </div>
-
-        <div class="tool-card">
-            <h3>Inventory</h3>
-            <a href="inventory.php" class="btn">Manage Inventory</a> <!-- Link to the inventory management PHP page -->
-        </div>
-    </section>
-
+            <div class="tool-card">
+                <h3>Inventory</h3>
+                <a href="inventory.php" class="btn">Manage Inventory</a>
+                <!-- Link to the inventory management PHP page -->
+            </div>
+        </section>
+    </main>
     <!-- Footer Section -->
     <footer>
         <p>&copy; 2024 Aged Care Management System. All rights reserved.</p>

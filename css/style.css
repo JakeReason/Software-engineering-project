@@ -1,35 +1,10 @@
-.roboto-regular {
-    font-family: "Roboto", sans-serif;
-    font-weight: 400;
-    font-style: normal;
-}
-
-.roboto-bold {
-    font-family: "Roboto", sans-serif;
-    font-weight: 700;
-    font-style: normal;
-}
-
-.roboto-regular-italic {
-    font-family: "Roboto", sans-serif;
-    font-weight: 400;
-    font-style: italic;
-}
-
-.roboto-bold-italic {
-    font-family: "Roboto", sans-serif;
-    font-weight: 700;
-    font-style: italic;
-}
-
 html,
 main,
-header,
-footer {
+header {
     font-family: "Roboto", sans-serif;
     font-weight: 400;
     font-style: normal;
-    padding-left: 64px;
+    padding-left: 32px;
     padding-right: 32px;
 }
 
@@ -38,13 +13,17 @@ header {
     justify-content: space-between;
     align-items: center;
     flex-wrap: wrap;
-    padding-left: 64px;
+    padding-left: 16px;
     padding-right: 32px;
+    background-color: cadetblue;
+    max-height: 128px;
 }
 
 header h1 {
     text-align: left;
-    font-size: 48pt;
+    font-size: 2vw;
+    font-size: 36px;
+    max-width: 48.5vw
 }
 
 header nav {
@@ -62,16 +41,151 @@ nav ul {
     display: flex;
 }
 
-nav li {
-    text-align: center;
+header nav li {
+    list-style-type: none;
+    margin: 0;
+    flex: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+header nav li:hover {
+    background-color: rgb(72, 128, 130);
 }
 
 nav a {
     padding-bottom: 15px;
     padding-top: 15px;
     text-decoration: none;
+    color: black;
 }
 
+.staff-main a,
+.integration-tools a {
+    text-decoration: none;
+    background-color: #EEEEEE;
+    color: #333333;
+    padding: 2px 6px 2px 6px;
+    border-top: 1px solid #CCCCCC;
+    border-right: 1px solid #333333;
+    border-bottom: 1px solid #333333;
+    border-left: 1px solid #CCCCCC;
+}
+
+.staff-main a:active,
+.integration-tools a:active {
+    text-decoration: none;
+    background-color: #EEEEEE;
+    color: #333333;
+    padding: 2px 6px 2px 6px;
+    border-top: 1px solid #333333;
+    border-right: 1px solid #CCCCCC;
+    border-bottom: 1px solid #CCCCCC;
+    border-left: 1px solid #333333;
+}
+
+.quick-links li {
+    padding: 0;
+    margin: 0;
+    list-style-type: none;
+    text-align: right;
+}
+
+a {
+    text-decoration: none;
+}
+
+main a:hover {
+    background-color: aqua;
+}
+
+.quick-links {
+    text-align: right;
+}
+
+.breadcrumb {
+    font-size: small;
+}
+
+.news li,
+.events li {
+    padding-bottom: 8px;
+}
+
+.login,
+.scheduling {
+    display: flex;
+    max-width: fit-content;
+    margin-left: auto;
+    margin-right: auto;
+    flex-direction: column;
+    text-align: center;
+}
+
+.inventory-summary,
+.facility-summary {
+    display: grid;
+    grid-template-columns: auto auto auto;
+}
+
+.inventory-text,
+.facility-text {
+    max-width: 50%;
+}
+
+section {
+    padding-bottom: 32px;
+    padding-left: 32px;
+}
+
+.summary {
+    background-color: rgb(137, 214, 216);
+    padding-bottom: 4px;
+    padding-left: 4px;
+    padding-right: 16px;
+    max-width: fit-content;
+    border: 4px solid #333333
+}
+
+.dashboard-overview {
+    display: grid;
+    grid-template-columns: auto auto auto;
+}
+
+.search-navigation {
+    padding-bottom: 0px;
+}
+
+.management-team,
+.current-staff,
+.view-all-staff-button {
+    text-align: center;
+}
+
+.staff-member,
+.manager {
+    padding-left: 4px;
+    padding-right: 4px;
+}
+
+.team-rows,
+.staff-grid {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+
+
+.residents-table table {
+    display: flex;
+    flex-direction: row;
+}
+
+html {
+    padding-bottom: 32px;
+}
 
 footer {
     text-align: center;
@@ -81,5 +195,6 @@ footer {
     right: 0;
     width: 100%;
     height: auto;
-    background-color: #e97d11;
+    background-color: rgb(20, 97, 99);
+    ;
 }
