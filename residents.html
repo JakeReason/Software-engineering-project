@@ -2,14 +2,16 @@
 <html lang="en">
 
 <head>
+    <!-- Define character set and viewport settings -->
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- The title of the page -->
     <title>Residents - Aged Care Management System</title>
+    <!-- Link to external CSS file for styling -->
     <link rel="stylesheet" href="css/style.css">
 </head>
-
 <body>
-    <!-- Header Section -->
+    <!-- Header Section: Includes page title and navigation menu -->
     <header>
         <h1>Resident Management</h1>
         <nav>
@@ -22,13 +24,14 @@
         </nav>
     </header>
     <hr>
-    <!-- Breadcrumb Navigation -->
+    <!-- Breadcrumb Navigation for user orientation -->
     <nav class="breadcrumb">
         <a href="home.html">Home</a> &gt; <a href="residents.html">Residents</a>
     </nav>
     <hr>
+    <!-- Main Content Section: Contains resident-related functionality -->
     <main class="residents-main">
-        <!-- Dashboard Overview Section -->
+        <!-- Dashboard Overview Section: Displays key statistics -->
         <section class="dashboard-overview">
             <div class="summary">
                 <h2>Resident Summary Dashboard</h2>
@@ -39,7 +42,7 @@
                 </p>
                 <p>Residents Requiring Special Care:
                     <strong>
-                        <!-- PHP code to retrieve and display the number of residents requiring special care (High level) from the database -->
+                        <!-- PHP code to retrieve and display the number of residents requiring special care (high level) from the database -->
                     </strong>
                 </p>
                 <p>Recent Updates: <strong>Last update 1 hour ago</strong></p>
@@ -48,15 +51,15 @@
                 <h3>Quick Links</h3>
                 <ul>
                     <li><a href="add_resident.php">Add New Resident</a></li>
-                    <!-- Link to PHP file or a form to add a new resident -->
+                    <!-- Link to PHP file or form to add a new resident -->
                     <li><a href="scheduling.php">View Staff Schedules</a></li>
-                    <!-- Link to PHP file or html page to view staff schedules-->
+                    <!-- Link to PHP file or HTML page to view staff schedules -->
                     <li><a href="emergencycontacts.php">Emergency Contacts</a></li>
-                    <!-- Link to PHP file or html page to view emergency contacts, listed in order of resident ID-->
+                    <!-- Link to PHP file or HTML page to view emergency contacts -->
                 </ul>
             </div>
         </section>
-        <!-- Search and Filter Section -->
+        <!-- Search and Filter Section: Provides filtering options to find residents -->
         <section class="search-navigation">
             <h2>Search and Filter Residents</h2>
             <form method="POST" action="residents.php" class="search-form">
@@ -90,8 +93,7 @@
                 <button type="submit">Search</button>
             </form>
         </section>
-
-        <!-- Residents Table Section -->
+        <!-- Residents Table Section: Displays a list of residents in a table format -->
         <section class="residents-table">
             <h2>Residents List</h2>
             <table>
@@ -123,8 +125,7 @@
                 </tbody>
             </table>
         </section>
-
-        <!-- Integration with Other Modules -->
+        <!-- Integration with Other Modules: Provides access to integrated tools -->
         <section class="integration-tools">
             <h2>Integrated Tools</h2>
             <div class="tool-card">
@@ -132,13 +133,11 @@
                 <a href="medication_tracker.php" class="btn">Access Medication Tracker</a>
                 <!-- Link to the medication tracker PHP page -->
             </div>
-
             <div class="tool-card">
                 <h3>Family Interaction Portal</h3>
                 <a href="familyportal.php" class="btn">Access Family Portal</a>
                 <!-- Link to the family interaction portal PHP page -->
             </div>
-
             <div class="tool-card">
                 <h3>Inventory</h3>
                 <a href="inventory.php" class="btn">Manage Inventory</a>
@@ -146,7 +145,7 @@
             </div>
         </section>
     </main>
-    <!-- Footer Section -->
+    <!-- Footer Section: Copyright information -->
     <footer>
         <p>&copy; 2024 Aged Care Management System. All rights reserved.</p>
     </footer>

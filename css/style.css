@@ -1,200 +1,227 @@
+/* Apply common styles to html, main, and header elements */
 html,
 main,
 header {
-    font-family: "Roboto", sans-serif;
-    font-weight: 400;
-    font-style: normal;
-    padding-left: 32px;
-    padding-right: 32px;
+    font-family: "Roboto", sans-serif; /* Set font to Roboto */
+    font-weight: 400; /* Regular font weight */
+    font-style: normal; /* Normal font style */
+    padding-left: 32px; /* Padding on the left side */
+    padding-right: 32px; /* Padding on the right side */
 }
 
+/* Header section styles */
 header {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    flex-wrap: wrap;
-    padding-left: 16px;
-    padding-right: 32px;
-    background-color: cadetblue;
-    max-height: 128px;
+    display: flex; /* Use flexbox for layout */
+    justify-content: space-between; /* Distribute space between items */
+    align-items: center; /* Align items vertically */
+    flex-wrap: wrap; /* Wrap elements in case they overflow */
+    padding-left: 16px; /* Additional left padding */
+    padding-right: 32px; /* Right padding */
+    background-color: cadetblue; /* Set background color to cadetblue */
+    max-height: 128px; /* Limit the maximum height */
 }
 
+/* Header title (h1) styles */
 header h1 {
-    text-align: left;
-    font-size: 2vw;
-    font-size: 36px;
-    max-width: 48.5vw
+    text-align: left; /* Align text to the left */
+    font-size: 2vw; /* Font size relative to viewport width */
+    font-size: 36px; /* Fallback font size */
+    max-width: 48.5vw; /* Limit the width of the title */
 }
 
+/* Navigation bar styles */
 header nav {
-    margin-left: auto;
+    margin-left: auto; /* Push navigation to the right */
 }
 
+/* Individual list items in the navigation menu */
 header nav li {
-    text-decoration: none;
-    list-style-type: none;
-    padding: 15px;
-    margin: 0 10px;
+    text-decoration: none; /* Remove underline from links */
+    list-style-type: none; /* Remove bullet points from lists */
+    padding: 15px; /* Add padding around list items */
+    margin: 0 10px; /* Add margin between list items */
 }
 
+/* Navigation unordered list styles */
 nav ul {
-    display: flex;
+    display: flex; /* Display list items in a row */
 }
 
+/* Ensure list items are flexbox containers */
 header nav li {
-    list-style-type: none;
-    margin: 0;
-    flex: 1;
-    display: flex;
-    align-items: center;
-    justify-content: center;
+    list-style-type: none; /* Remove bullet points */
+    margin: 0; /* No margin */
+    flex: 1; /* Make all items grow equally */
+    display: flex; /* Flexbox layout */
+    align-items: center; /* Center items vertically */
+    justify-content: center; /* Center items horizontally */
 }
 
+/* Hover effect for navigation list items */
 header nav li:hover {
-    background-color: rgb(72, 128, 130);
+    background-color: rgb(72, 128, 130); /* Change background color on hover */
 }
 
+/* Style for links in navigation */
 nav a {
-    padding-bottom: 15px;
-    padding-top: 15px;
-    text-decoration: none;
-    color: black;
+    padding-bottom: 15px; /* Padding below the link text */
+    padding-top: 15px; /* Padding above the link text */
+    text-decoration: none; /* Remove underline */
+    color: black; /* Set text color to black */
 }
 
+/* Link styles for staff-main and integration-tools sections */
 .staff-main a,
 .integration-tools a {
-    text-decoration: none;
-    background-color: #EEEEEE;
-    color: #333333;
-    padding: 2px 6px 2px 6px;
-    border-top: 1px solid #CCCCCC;
-    border-right: 1px solid #333333;
-    border-bottom: 1px solid #333333;
-    border-left: 1px solid #CCCCCC;
+    text-decoration: none; /* Remove underline */
+    background-color: #EEEEEE; /* Set background color */
+    color: #333333; /* Set text color */
+    padding: 2px 6px 2px 6px; /* Add padding inside links */
+    border-top: 1px solid #CCCCCC; /* Top border */
+    border-right: 1px solid #333333; /* Right border */
+    border-bottom: 1px solid #333333; /* Bottom border */
+    border-left: 1px solid #CCCCCC; /* Left border */
 }
 
+/* Active state for links in staff-main and integration-tools */
 .staff-main a:active,
 .integration-tools a:active {
-    text-decoration: none;
-    background-color: #EEEEEE;
-    color: #333333;
-    padding: 2px 6px 2px 6px;
-    border-top: 1px solid #333333;
+    background-color: #EEEEEE; /* Set background color */
+    color: #333333; /* Set text color */
+    padding: 2px 6px 2px 6px; /* Add padding inside links */
+    border-top: 1px solid #333333; /* Reverse the border colors */
     border-right: 1px solid #CCCCCC;
     border-bottom: 1px solid #CCCCCC;
     border-left: 1px solid #333333;
 }
 
+/* Quick links list items styles */
 .quick-links li {
-    padding: 0;
-    margin: 0;
-    list-style-type: none;
-    text-align: right;
+    padding: 0; /* Remove padding */
+    margin: 0; /* Remove margin */
+    list-style-type: none; /* Remove bullet points */
+    text-align: right; /* Align text to the right */
 }
 
+/* Global link style to remove underline */
 a {
-    text-decoration: none;
+    text-decoration: none; /* Remove underline */
 }
 
+/* Hover effect for links inside the main element */
 main a:hover {
-    background-color: aqua;
+    background-color: aqua; /* Change background color to aqua */
 }
 
+/* Align text to the right in quick-links */
 .quick-links {
     text-align: right;
 }
 
+/* Breadcrumb text size */
 .breadcrumb {
-    font-size: small;
+    font-size: small; /* Set breadcrumb text size to small */
 }
 
+/* Padding for list items in news and events sections */
 .news li,
 .events li {
-    padding-bottom: 8px;
+    padding-bottom: 8px; /* Add space below list items */
 }
 
+/* Flexbox layout for login and scheduling sections */
 .login,
 .scheduling {
-    display: flex;
-    max-width: fit-content;
-    margin-left: auto;
-    margin-right: auto;
-    flex-direction: column;
-    text-align: center;
+    display: flex; /* Use flexbox for layout */
+    max-width: fit-content; /* Adjust to content width */
+    margin-left: auto; /* Center horizontally */
+    margin-right: auto; /* Center horizontally */
+    flex-direction: column; /* Stack items vertically */
+    text-align: center; /* Center align text */
 }
 
+/* Grid layout for inventory and facility summary sections */
 .inventory-summary,
 .facility-summary {
-    display: grid;
-    grid-template-columns: auto auto auto;
+    display: grid; /* Use grid layout */
+    grid-template-columns: auto auto auto; /* Create three equal columns */
 }
 
+/* Limit text width in inventory and facility sections */
 .inventory-text,
 .facility-text {
-    max-width: 50%;
+    max-width: 50%; /* Set a maximum width for text content */
 }
 
+/* Section padding for better spacing */
 section {
-    padding-bottom: 32px;
-    padding-left: 32px;
+    padding-bottom: 32px; /* Padding at the bottom of sections */
+    padding-left: 32px; /* Padding on the left */
 }
 
+/* Summary box styles */
 .summary {
-    background-color: rgb(137, 214, 216);
-    padding-bottom: 4px;
-    padding-left: 4px;
-    padding-right: 16px;
-    max-width: fit-content;
-    border: 4px solid #333333
+    background-color: rgb(137, 214, 216); /* Light blue background color */
+    padding-bottom: 4px; /* Bottom padding */
+    padding-left: 4px; /* Left padding */
+    padding-right: 16px; /* Right padding */
+    max-width: fit-content; /* Width adjusts to content */
+    border: 4px solid #333333; /* Dark border around the box */
 }
 
+/* Grid layout for dashboard overview */
 .dashboard-overview {
-    display: grid;
-    grid-template-columns: auto auto auto;
+    display: grid; /* Use grid layout */
+    grid-template-columns: auto auto auto; /* Three columns layout */
 }
 
+/* Remove bottom padding in search navigation */
 .search-navigation {
-    padding-bottom: 0px;
+    padding-bottom: 0px; /* Remove padding */
 }
 
+/* Center-align text in management team, current staff, and view-all-staff-button sections */
 .management-team,
 .current-staff,
 .view-all-staff-button {
-    text-align: center;
+    text-align: center; /* Center align text */
 }
 
+/* Padding for individual staff members and managers */
 .staff-member,
 .manager {
-    padding-left: 4px;
-    padding-right: 4px;
+    padding-left: 4px; /* Left padding */
+    padding-right: 4px; /* Right padding */
 }
 
+/* Flexbox layout for team and staff rows */
 .team-rows,
 .staff-grid {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: center;
+    display: flex; /* Use flexbox for layout */
+    flex-direction: row; /* Arrange items in a row */
+    align-items: center; /* Center align items vertically */
+    justify-content: center; /* Center align items horizontally */
 }
 
-
+/* Flexbox layout for the residents table */
 .residents-table table {
-    display: flex;
-    flex-direction: row;
+    display: flex; /* Use flexbox for layout */
+    flex-direction: row; /* Arrange table rows in a horizontal layout */
 }
 
+/* Add padding at the bottom of the page */
 html {
-    padding-bottom: 32px;
+    padding-bottom: 32px; /* Padding at the bottom of the page */
 }
 
+/* Footer styles */
 footer {
-    text-align: center;
-    position: fixed;
-    bottom: 0;
-    left: 0;
-    right: 0;
-    width: 100%;
-    height: auto;
-    background-color: rgb(20, 97, 99);
-    ;
+    text-align: center; /* Center align text in footer */
+    position: fixed; /* Fix footer to the bottom of the page */
+    bottom: 0; /* Align at the bottom of the window */
+    left: 0; /* Align to the left edge */
+    right: 0; /* Align to the right edge */
+    width: 100%; /* Make footer full width */
+    height: auto; /* Set height to auto */
+    background-color: rgb(20, 97, 99); /* Dark background color */
 }

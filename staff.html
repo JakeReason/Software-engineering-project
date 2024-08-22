@@ -2,14 +2,19 @@
 <html lang="en">
 
 <head>
+    <!-- Define character set and viewport settings for responsiveness -->
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <!-- The title of the staff management page -->
     <title>Staff - Aged Care Management System</title>
+    
+    <!-- Link to external CSS file for styling -->
     <link rel="stylesheet" href="css/style.css">
 </head>
 
 <body>
-    <!-- Header Section -->
+    <!-- Header Section: Includes the page title and navigation menu -->
     <header>
         <h1>Staff Management</h1>
         <nav>
@@ -23,14 +28,16 @@
     </header>
 
     <hr>
-    <!-- Breadcrumb Navigation -->
+    <!-- Breadcrumb Navigation for user orientation -->
     <nav class="breadcrumb">
         <a href="home.html">Home</a> &gt; <a href="staff.html">Staff</a>
     </nav>
     <hr>
-    <!-- Main Content Section -->
+
+    <!-- Main Content Section: Contains staff-related functionality -->
     <main class="staff-main">
-        <!-- Inventory Summary Section -->
+
+        <!-- Inventory Summary Section: Displays an overview of inventory for the current month -->
         <section class="inventory-summary">
             <div class="inventory-text">
                 <h2>Inventory Summary for this month</h2>
@@ -41,16 +48,16 @@
                 <a href="#">Go to the Inventory Page</a>
             </div>
             <div class="inventory-graph">
-                <!-- (Image of inventory graph, for example) section <img src="images/inventory.png" alt="Inventory graph?"> -->
+                <!-- Placeholder for inventory graph, could be an image or dynamically generated -->
                 <p>Inventory graph</p>
             </div>
         </section>
 
-        <!-- Current Staff On-Site Section -->
+        <!-- Current Staff On-Site Section: Displays a grid of staff members currently on-site -->
         <section class="current-staff">
             <h2>Current Staff on-site:</h2>
             <div class="staff-grid">
-                <!-- Repeat for each staff member, fill in details accordingly -->
+                <!-- Repeat for each staff member, with a placeholder image and name -->
                 <div class="staff-member">
                     <img src="images/staff_placeholder.png" alt="Staff Member">
                     <p>Staff Member Name</p>
@@ -67,32 +74,18 @@
                     <img src="images/staff_placeholder.png" alt="Staff Member">
                     <p>Staff Member Name</p>
                 </div>
-                <div class="staff-member">
-                    <img src="images/staff_placeholder.png" alt="Staff Member">
-                    <p>Staff Member Name</p>
-                </div>
-                <div class="staff-member">
-                    <img src="images/staff_placeholder.png" alt="Staff Member">
-                    <p>Staff Member Name</p>
-                </div>
-                <div class="staff-member">
-                    <img src="images/staff_placeholder.png" alt="Staff Member">
-                    <p>Staff Member Name</p>
-                </div>
-                <div class="staff-member">
-                    <img src="images/staff_placeholder.png" alt="Staff Member">
-                    <p>Staff Member Name</p>
-                </div>
+                <!-- Add more staff members as needed -->
             </div>
         </section>
 
+        <!-- View All Staff Button Section: Button to submit a form and view all staff -->
         <section class="view-all-staff-button">
             <form method="POST" action="staff.html">
                 <button type="submit" name="view_all" class="btn">View All Staff</button>
             </form>
-
         </section>
-        <!-- View All Staff Section -->
+
+        <!-- View All Staff Section: PHP code to display all staff when the button is clicked -->
         <section class="view-all-staff">
             <!----- PHP
             // Check if the "View All Staff" button was clicked
@@ -154,7 +147,7 @@
             PHP ------>
         </section>
 
-        <!-- Facility Management Report Section -->
+        <!-- Facility Management Report Section: Overview of facility management statistics for the month -->
         <section class="facility-summary">
             <div class="facility-text">
                 <h2>Facility Management Summary for this month</h2>
@@ -165,22 +158,20 @@
                 <a href="#">Go to the Facilities Page</a>
             </div>
             <div class="facility-report">
-                <!-- (Image of facility report stats, number of reviews and ratings, just an example) section <img src="images/facilityreport.png" alt="Facility Report"> -->
+                <!-- Placeholder for facility management summary, could be an image or dynamically generated -->
                 <p>Facility Management Summary</p>
             </div>
         </section>
 
+        <!-- Scheduling Section: Link to the staff scheduling roster -->
         <section class="scheduling">
             <h2>Staff Scheduling Roster</h2>
             <p><a href="scheduling.php">View the latest staff scheduling roster here</a></p>
             <!-- PHP code to fetch and display scheduling data -->
         </section>
-
     </main>
 
-    </main>
-
-    <!-- Footer Section -->
+    <!-- Footer Section: Copyright information -->
     <footer>
         <p>&copy; 2024 Aged Care Management System. All rights reserved.</p>
     </footer>
