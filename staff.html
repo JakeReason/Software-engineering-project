@@ -21,7 +21,15 @@
             <ul>
                 <li><a href="home.html">Home</a></li>
                 <li><a href="residents.html">Residents</a></li>
-                <li><a href="staff.html">Staff</a></li>
+                <!-- Dropdown Menu for Staff -->
+                <li class="dropdown">
+                    <a href="staff.html" class="dropbtn">Staff</a>
+                    <div class="dropdown-content">
+                        <a href="facility.html">Facility Management</a>
+                        <a href="service.html">Service Management</a>
+                        <a href="scheduling.html">Scheduling</a>
+                    </div>
+                </li>
                 <li><a href="login.html">Login</a></li>
             </ul>
         </nav>
@@ -41,14 +49,14 @@
         <section class="inventory-summary">
             <div class="inventory-text">
                 <h2>Inventory Summary for this month</h2>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque efficitur euismod quam, in
-                    blandit purus. Nullam mollis eros ut hendrerit suscipit. Morbi feugiat metus non nunc tempor, non
-                    tempor elit lacinia. Fusce ac odio arcu. Curabitur nec lacus neque. Nulla facilisi. Mauris a dapibus
-                    dolor. Donec id odio eu eros tincidunt faucibus non nec arcu.</p>
+                <p>The Inventory Summary for this month provides an overview of the essential supplies and medical equipment available in the aged care facility.
+				As of the latest report, the facility has a stock of 500 units of daily necessities, including toiletries and personal hygiene products, with 85% of these items currently in use.
+				Medical supplies, such as gloves, masks, and antiseptics, are at 70% capacity with 150 units remaining in stock. Additionally, medication inventory stands at 60%, with approximately 120 doses of general prescription drugs available. 
+				Based on current usage rates, we anticipate restocking essential supplies and medications within the next two weeks to ensure continuous availability for residents and staff..</p>
                 <a href="#">Go to the Inventory Page</a>
             </div>
             <div class="inventory-graph">
-                <!-- Placeholder for inventory graph, could be an image or dynamically generated -->
+                <img src="images/InventoryGraph_19-09-24.png" alt="Inventory Graph" width="500" height="300">
                 <p>Inventory graph</p>
             </div>
         </section>
@@ -151,17 +159,20 @@
         <section class="facility-summary">
             <div class="facility-text">
                 <h2>Facility Management Summary for this month</h2>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque efficitur euismod quam, in
-                    blandit purus. Nullam mollis eros ut hendrerit suscipit. Morbi feugiat metus non nunc tempor, non
-                    tempor elit lacinia. Fusce ac odio arcu. Curabitur nec lacus neque. Nulla facilisi. Mauris a dapibus
-                    dolor. Donec id odio eu eros tincidunt faucibus non nec arcu.</p>
-                <a href="#">Go to the Facilities Page</a>
+                <p>The Facility Management Summary for this month highlights the effective utilisation and maintenance of the facility’s resources. 
+                    All 50 patient rooms are currently occupied, ensuring that residents receive the personalised care they need. The three recreational rooms, 
+                    which include a Game Room, Social Hall, and Arts & Crafts Room, are actively used for resident activities, with participation rates averaging 80% throughout the month. Staff rooms, 
+                    including break rooms and office spaces, are operating at 90% capacity, providing essential support for the care team. The five medical rooms, such as the Therapy Room and Medical Examination Room, 
+                    have been operating at full capacity, handling an average of 200 medical appointments and therapy sessions. Regular maintenance has been conducted in all areas, ensuring a safe and comfortable environment 
+                    for both residents and staff. Plans are in place to expand recreational facilities to meet the growing demand for resident activities and social engagement</p>
+                    <a href="facility.html">Go to the Facilities Page</a>
             </div>
-            <div class="facility-report">
-                <!-- Placeholder for facility management summary, could be an image or dynamically generated -->
+            <div class="facility-chart">
+                <img src="images/FacilityChart_19-09-24.png" alt="Facility Chart" width="500" height="300">
                 <p>Facility Management Summary</p>
             </div>
         </section>
+		
 
         <!-- Scheduling Section: Link to the staff scheduling roster -->
         <section class="scheduling">
