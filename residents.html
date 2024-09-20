@@ -10,6 +10,7 @@
     <!-- Link to external CSS file for styling -->
     <link rel="stylesheet" href="css/style.css">
 </head>
+
 <body>
     <!-- Header Section: Includes page title and navigation menu -->
     <header>
@@ -74,15 +75,12 @@
                 <label for="first_name">First Name:</label>
                 <input type="text" id="first_name" name="first_name" value="">
                 <!-- PHP code to echo the value of the first name if the form is submitted -->
-                <br>
                 <label for="last_name">Last Name:</label>
                 <input type="text" id="last_name" name="last_name" value="">
                 <!-- PHP code to echo the value of the last name if the form is submitted -->
-                <br>
                 <label for="dob">Date of Birth:</label>
                 <input type="date" id="dob" name="dob" value="">
                 <!-- PHP code to echo the value of the date of birth if the form is submitted -->
-                <br>
                 <label for="care_level">Care Level:</label>
                 <select id="care_level" name="care_level">
                     <option value="">Select Care Level</option>
@@ -93,11 +91,10 @@
                     <option value="high">High</option>
                     <!-- PHP code to mark this option as selected if $care_level is 'high' -->
                 </select>
-                <br>
                 <label for="room_number">Room Number:</label>
                 <input type="text" id="room_number" name="room_number" value="">
                 <!-- PHP code to echo the value of the room number if the form is submitted -->
-                <br>
+                <br><br>
                 <button type="submit">Search</button>
             </form>
         </section>

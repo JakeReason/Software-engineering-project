@@ -33,7 +33,8 @@
     <hr>
     <!-- Breadcrumb Navigation -->
     <nav class="breadcrumb">
-        <a href="home.html">Home</a> &gt; <a href="staff.html">Staff</a> &gt; <a href="facility.html">Facility Management</a>
+        <a href="home.html">Home</a> &gt; <a href="staff.html">Staff</a> &gt; <a href="facility.html">Facility
+            Management</a>
     </nav>
     <hr>
 
@@ -45,30 +46,34 @@
             <div class="facility-list">
                 <div class="facility-item">
                     <h3>Patient Rooms</h3>
-                    <p>Our facility has 50 fully furnished patient rooms, each equipped with modern amenities and an ensuite bathroom to ensure the comfort and privacy of our residents.</p>
+                    <p>Our facility has 50 fully furnished patient rooms, each equipped with modern amenities and an
+                        ensuite bathroom to ensure the comfort and privacy of our residents.</p>
                 </div>
                 <div class="facility-item">
                     <h3>Recreational Rooms</h3>
-                    <p>There are three recreational rooms available for various activities, including a Game Room, Social Hall, and Arts & Crafts Room, providing residents with diverse leisure options.</p>
+                    <p>There are three recreational rooms available for various activities, including a Game Room,
+                        Social Hall, and Arts & Crafts Room, providing residents with diverse leisure options.</p>
                 </div>
                 <div class="facility-item">
                     <h3>Staff Rooms</h3>
-                    <p>We offer 10 staff rooms, including break rooms and office spaces, to support our dedicated team members in their day-to-day operations.</p>
+                    <p>We offer 10 staff rooms, including break rooms and office spaces, to support our dedicated team
+                        members in their day-to-day operations.</p>
                 </div>
                 <div class="facility-item">
                     <h3>Medical Rooms</h3>
-                    <p>The facility includes five medical rooms, such as Therapy Rooms and Medical Examination Rooms, where residents can receive treatments and consultations from healthcare professionals.</p>
+                    <p>The facility includes five medical rooms, such as Therapy Rooms and Medical Examination Rooms,
+                        where residents can receive treatments and consultations from healthcare professionals.</p>
                 </div>
             </div>
         </section>
 
-        <!-- Room Booking and Assignment Section --> 
+        <!-- Room Booking and Assignment Section -->
         <section class="room-booking">
             <h2>Book and Assign Rooms</h2>
-            <form action="assign_room.php" method="POST"> <!-----Non-functionsl php file, just an example to implement in the future -->
+            <form action="assign_room.php" method="POST">
+                <!-----Non-functional php file, just an example to implement in the future -->
                 <label for="room_number">Room Number:</label>
                 <input type="text" id="room_number" name="room_number" required>
-
                 <label for="room_type">Room Type:</label>
                 <select id="room_type" name="room_type" required>
                     <option value="">Select Room Type</option>
@@ -77,13 +82,12 @@
                     <option value="staff">Staff Room</option>
                     <option value="medical">Medical Room</option>
                 </select>
-
                 <label for="assigned_to">Assigned To (Resident/Staff Name):</label>
                 <input type="text" id="assigned_to" name="assigned_to" required>
-
                 <label for="booking_date">Booking Date:</label>
                 <input type="date" id="booking_date" name="booking_date" required>
-
+                <br>
+                <br>
                 <button type="submit">Assign Room</button>
             </form>
         </section>
@@ -91,7 +95,8 @@
         <!-- Facility Maintenance Request Section -->
         <section class="maintenance-request">
             <h2>Facility Maintenance Requests</h2>
-            <form action="maintenance_request.php" method="POST"> <!-----Non-functionsl php file, just an example to implement in the future -->
+            <form action="maintenance_request.php" method="POST">
+                <!-----Non-functional php file, just an example to implement in the future -->
                 <label for="facility">Facility:</label>
                 <select id="facility" name="facility" required>
                     <option value="">Select Facility</option>
@@ -100,17 +105,15 @@
                     <option value="staff_room">Staff Room</option>
                     <option value="medical_room">Medical Room</option>
                 </select>
-
                 <label for="issue_description">Issue Description:</label>
                 <textarea id="issue_description" name="issue_description" rows="4" required></textarea>
-
                 <label for="priority">Priority:</label>
                 <select id="priority" name="priority" required>
                     <option value="low">Low</option>
                     <option value="medium">Medium</option>
                     <option value="high">High</option>
                 </select>
-
+                <br><br>
                 <button type="submit">Submit Request</button>
             </form>
         </section>
@@ -118,9 +121,10 @@
         <!-- Facility Usage Dashboard -->
         <section class="facility-usage-dashboard">
             <h2>Facility Usage Dashboard</h2>
-            <p>Monitor the usage and availability of different facility types to ensure efficient resource management.</p>
+            <p>Monitor the usage and availability of different facility types to ensure efficient resource management.
+            </p>
             <div class="facility-chart">
-                <img src="images/FacilityChart_19-09-24.png" alt="Facility Chart"  width="500" height="300">
+                <img src="images/FacilityChart_19-09-24.png" alt="Facility Chart" width="500" height="300">
                 <p>Facility Management Summary</p>
             </div>
         </section>
